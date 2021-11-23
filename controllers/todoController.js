@@ -26,12 +26,11 @@ exports.getAllTodos = async (req, res) => {
 
 exports.getTodo = async (req, res) => {
   try {
-    const Todo = await Todo.findById(req.params.id);
+    const todo = await Todo.findById(req.params.id);
     res.status(200).json({
       status: "success",
-      result: todos.length,
       data: {
-        todos,
+        todo,
       },
     });
   } catch (err) {

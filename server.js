@@ -5,7 +5,7 @@ dotenv.config({ path: "./config.env" });
 
 const app = require("./app");
 
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 8080;
 
 // DATABASE
 
